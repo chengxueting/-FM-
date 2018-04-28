@@ -26,7 +26,7 @@ $('.btn3').on('click',function(){
 })
 function getChannels(){
     $.ajax({
-        url:'http://api.jirengu.com/fm/getChannels.php',
+        url:'//api.jirengu.com/fm/getChannels.php',
         Method:'get',
         dataType:'json',
         success:function(response){
