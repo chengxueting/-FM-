@@ -26,7 +26,7 @@ $('.btn3').on('click',function(){
 })
 function getChannels(){
     $.ajax({
-        url:'//api.jirengu.com/fm/getChannels.php',
+        url:'http://api.jirengu.com/fm/getChannels.php',
         Method:'get',
         dataType:'json',
         success:function(response){
@@ -45,7 +45,7 @@ function getChannels(){
 }
 function getMusic(){
     $.ajax({
-        url:'//api.jirengu.com/fm/getSong.php',
+        url:'http://api.jirengu.com/fm/getSong.php',
         Method:'get',
         dataType:'json',
         data:{
@@ -79,7 +79,7 @@ function getMusic(){
 function getWord(){
     var id=$('audio').attr('sid')
     $.ajax({
-        url: '//api.jirengu.com/fm/getLyric.php',
+        url: 'http://api.jirengu.com/fm/getLyric.php',
         Method:'get',
         dataType:'json',
         data:{
